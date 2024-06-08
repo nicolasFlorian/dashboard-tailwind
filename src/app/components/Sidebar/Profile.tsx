@@ -9,15 +9,15 @@ export function Profile() {
         className="h-8 w-8 rounded-full"
       />
       <div className="flex flex-col truncate">
-        <span className="truncate text-sm font-semibold text-zinc-700">
+        <span className="truncate text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Nicolas Floriano
         </span>
-        <span className="truncate text-xs text-zinc-500">
+        <span className="dark:textzinc300 truncate text-xs text-zinc-500 dark:text-zinc-300">
           nicolasfloriano@gmail.com
         </span>
       </div>
       <Button type="button" variant="icon" className="ml-auto">
-        <LogOut className="h-4 w-4 text-zinc-500" />
+        <LogOut className="h-4 w-4 text-zinc-500 dark:text-zinc-100" />
       </Button>
     </div>
   )

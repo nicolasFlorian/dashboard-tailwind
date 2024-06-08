@@ -10,8 +10,16 @@ const button = tv({
   variants: {
     variant: {
       primary: ['bg-violet-600 text-white', 'hover:bg-violet-700'],
-      outline: ['border border-zinc-300 text-zinc-700', 'hover:bg-zinc-50'],
-      icon: ['rounded-md p-2 transition-all shadow-none', 'hover:bg-zinc-100'],
+      outline: [
+        'border border-zinc-300 text-zinc-700',
+        'hover:bg-zinc-50',
+        'dark:text-zinc-100 dark:border-zinc-600 dark:hover:bg-zinc-800',
+      ],
+      icon: [
+        'rounded-md p-2 transition-all shadow-none',
+        'hover:bg-zinc-100',
+        'dark:hover:bg-zinc-700',
+      ],
     },
   },
   defaultVariants: {
