@@ -5,7 +5,7 @@ const config: Config = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        app: 'minmax(16rem, 18rem) 1fr',
+        app: '18rem 1fr',
         form: 'minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 25rem)',
       },
 
