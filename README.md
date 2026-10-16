@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# dashboard-tailwind
 
-## Getting Started
+A settings page built with Next.js 14, TypeScript and Tailwind CSS, with a light and a dark theme. It is a 2024 learning project, and I kept it because the component structure is the part I'm happy with.
 
-First, run the development server:
+| Light | Dark |
+| --- | --- |
+| ![Settings page, light theme](docs/light.png) | ![Settings page, dark theme](docs/dark.png) |
+
+## What's in it
+
+- **Compound components.** `Input.Root` / `Input.Control`, and `FileInput.Root` / `Trigger` / `Control` / `FileList` / `FileItem` / `ImagePreview`, share state through context instead of long prop lists.
+- **Radix primitives** for the select and the tabs, styled with Tailwind and `tailwind-variants`.
+- **Responsive layout.** A custom grid template for the form rows that collapses to a single column on small screens, a scrollable tab bar, and a sidebar that becomes a collapsible menu on mobile.
+- **Dark mode** through Tailwind's `dark:` variants.
+- **Small motion details.** A slide-and-fade on the select menu and auto-animated file lists.
+
+## Run it
 
 ```bash
-npm run dev
-# or
+yarn install
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000. `yarn build` and `yarn lint` both pass.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next.js 14 (App Router), React 18, TypeScript, Tailwind CSS 3, Radix UI, auto-animate, Lucide icons.
 
-## Learn More
+## Credit
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+A learning project. The layout follows the Untitled UI settings page, so the design is not mine, and the ESLint config is Rocketseat's.

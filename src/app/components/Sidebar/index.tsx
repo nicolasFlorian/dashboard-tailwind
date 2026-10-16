@@ -27,7 +27,7 @@ export function Sidebar() {
         <Logo />
         <Collapsible.Trigger asChild className="lg:hidden">
           <Button variant="icon">
-            <Menu className='className="h-6 w-6"' />
+            <Menu className="h-6 w-6" />
           </Button>
         </Collapsible.Trigger>
       </div>

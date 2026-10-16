@@ -6,6 +6,7 @@ export function Profile() {
     <div className="flex items-center gap-3">
       <img
         src="https://github.com/nicolasFlorian.png"
+        alt="Nicolas Floriano"
         className="h-8 w-8 rounded-full"
       />
       <div className="flex flex-col truncate">
